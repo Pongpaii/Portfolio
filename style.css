@@ -1,0 +1,415 @@
+.contact-grid {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  background: #111;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  border: 1px solid #222;
+}
+
+.contact-item {
+  display: flex;
+
+  align-items: center;
+
+  font-size: 0.95rem;
+
+  gap: 10px;
+}
+
+.contact-icon {
+  width: 25px;
+
+  font-size: 1.1rem;
+}
+
+.contact-label {
+  color: var(--text-secondary);
+
+  width: 80px; /* ล็อกความกว้าง Label ให้ตรงกัน */
+
+  font-weight: 600;
+}
+
+.contact-value {
+  color: var(--accent-color);
+
+  text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+
+  transition: all 0.3s;
+}
+
+.contact-value:hover {
+  border-bottom: 1px solid var(--accent-color);
+
+  opacity: 0.8;
+}
+
+.contact-text {
+  color: var(--text-main);
+}
+
+/* สำหรับมือถือ ให้แสดงผลเป็นแนวตั้งถ้าหน้าจอแคบ */
+
+@media (max-width: 500px) {
+  .contact-item {
+    flex-wrap: wrap;
+  }
+
+  .contact-label {
+    width: 100%;
+  }
+}
+
+.video-container {
+  width: 100%; 
+  max-width: 800px; 
+  overflow: hidden;
+  border-radius: 8px; 
+}
+
+.video-container video {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  object-fit: cover; 
+}
+
+.video-container iframe {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+}
+
+:root {
+  --bg-color: #0d0d0d;
+
+  --text-main: #ffffff;
+
+  --text-secondary: #888888;
+
+  --accent-color: #3b82f6;
+
+  --card-bg: #1a1a1a;
+
+  --card-hover: #222222;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+
+  color: var(--text-main);
+
+  font-family: "Inter", sans-serif;
+
+  line-height: 1.6;
+
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 700px;
+
+  margin: 80px auto;
+}
+
+/* --- Header --- */
+
+header {
+  margin-bottom: 80px;
+}
+
+.subtitle {
+  color: var(--accent-color);
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 0.9rem;
+
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: -1px;
+
+  margin-bottom: 15px;
+}
+
+.description {
+  color: var(--text-secondary);
+
+  font-size: 1.1rem;
+
+  margin-bottom: 20px;
+}
+
+.education {
+  font-size: 0.9rem;
+
+  color: #555;
+
+  border-left: 2px solid var(--accent-color);
+
+  padding-left: 15px;
+}
+
+/* --- Projects & Experience --- */
+
+h2 {
+  font-size: 0.8rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+
+  color: var(--text-secondary);
+
+  margin: 50px 0 30px 0;
+}
+
+.project-card {
+  background: var(--card-bg);
+
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+
+  padding: 24px;
+
+  cursor: pointer;
+
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  border: 1px solid #222;
+
+  overflow: hidden;
+}
+
+.project-card:hover {
+  border-color: #444;
+
+  background: var(--card-hover);
+}
+
+.project-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+.project-title {
+  font-size: 1.3rem;
+
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+.project-meta {
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 0.85rem;
+
+  color: var(--accent-color);
+}
+
+.icon-expand {
+  color: var(--accent-color);
+
+  font-size: 1.5rem;
+
+  transition: transform 0.4s;
+
+  margin-top: -5px;
+}
+
+/* ส่วนเนื้อหาที่ขยาย */
+
+.project-content {
+  max-height: 0;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: all 0.5s ease;
+}
+
+.project-card.active .project-content {
+  max-height: 2500px; /* รองรับเนื้อหายาวๆ */
+
+  opacity: 1;
+
+  visibility: visible;
+
+  margin-top: 20px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #333;
+}
+
+.project-card.active .icon-expand {
+  transform: rotate(45deg);
+
+  color: #ff4d4d;
+}
+
+/* Internship Inner Projects */
+
+.inner-project {
+  margin-bottom: 30px;
+
+  border-bottom: 1px dashed #333;
+
+  padding-bottom: 20px;
+}
+
+.inner-project:last-child {
+  border-bottom: none;
+}
+
+.inner-project h4 {
+  color: #eee;
+
+  margin-bottom: 10px;
+
+  font-size: 1.1rem;
+}
+
+.inner-project ul {
+  list-style: none;
+
+  margin-top: 10px;
+}
+
+.inner-project li {
+  color: var(--text-secondary);
+
+  font-size: 0.95rem;
+
+  margin-bottom: 8px;
+
+  position: relative;
+
+  padding-left: 20px;
+}
+
+.inner-project li::before {
+  content: "→";
+
+  position: absolute;
+
+  left: 0;
+
+  color: var(--accent-color);
+}
+
+.project-img {
+  width: 100%;
+
+  border-radius: 10px;
+
+  margin: 15px 0;
+
+  display: block;
+
+  border: 1px solid #333;
+}
+
+.tags {
+  margin-top: 15px;
+
+  display: flex;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 0.7rem;
+
+  background: #111;
+
+  color: var(--accent-color);
+
+  padding: 4px 12px;
+
+  border-radius: 20px;
+
+  border: 1px solid #333;
+}
+
+/* --- Contact --- */
+
+.contact-links {
+  display: flex;
+
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+.contact-links a {
+  color: var(--text-main);
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+
+  transition: 0.2s;
+
+  border-bottom: 1px solid #333;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+
+  border-color: var(--accent-color);
+}
+
+footer {
+  margin-top: 100px;
+
+  padding-bottom: 40px;
+
+  font-size: 0.75rem;
+
+  color: #333;
+
+  text-align: center;
+}

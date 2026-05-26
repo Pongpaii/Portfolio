@@ -1,0 +1,520 @@
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pongpai Sodsong | Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="subtitle">
+          Software Developer (Internship) & Multimedia Specialist
+        </div>
+
+        <h1>ป้องไผ่ สอดส่อง</h1>
+
+        <p class="description">
+          นักศึกษาคณะเทคโนโลยีสารสนเทศ (Multimedia) สถาบันเทคโนโลยีไทย-ญี่ปุ่น
+        </p>
+
+        <div class="education">
+          Thai-Nichi Institute of Technology<br />
+
+          Information Technology (Multimedia Technology)
+        </div>
+      </header>
+
+      <section id="internship">
+        <h2>Work Experience</h2>
+
+        <div class="project-card active" onclick="toggleProject(this)">
+          <div class="project-header">
+            <div>
+              <div class="project-title">Software Developer (Internship)</div>
+
+              <div class="project-meta">Power Platform • SQL Server</div>
+            </div>
+
+            <div class="icon-expand">+</div>
+          </div>
+
+          <div class="project-content">
+            <div class="inner-project">
+              <h4>Project 1: Petty Cash Application</h4>
+
+              <img src="img/intern.jpg" alt="Petty Cash" class="project-img" />
+
+              <ul>
+                <li>
+                  <strong>UI/UX Implementation:</strong> พัฒนาแอปพลิเคชัน Petty
+                  Cash ด้วย Power Apps โดยแกะดีไซน์จาก Figma เป็น Functional App
+                </li>
+
+                <li>
+                  <strong>User Experience:</strong> ออกแบบ Component เช่น
+                  Gallery และ Popup ให้ใช้งานง่ายตาม Flow ธุรกิจ
+                </li>
+
+                <li>
+                  <strong>Requirement Matching:</strong> ปรับปรุงระบบตาม
+                  Feedback เพื่อตอบโจทย์การเบิกจ่ายจริงขององค์กร
+                </li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">#PowerApps</span>
+
+                <span class="tag">#Figma</span>
+
+                <span class="tag">#UX_Design</span>
+              </div>
+            </div>
+
+            <div class="inner-project">
+              <h4>Project 2: Asset Audit System</h4>
+
+              <ul>
+                <li>
+                  <strong>Database Management:</strong> เขียน Stored Procedure
+                  บน SSMS เพื่อจัดการ Data Versioning ที่ซับซ้อน
+                </li>
+
+                <li>
+                  <strong>System Integration:</strong> สร้าง Flow บน Power
+                  Automate เชื่อมต่อ API (D365) เพื่อดึงข้อมูลสินทรัพย์
+                </li>
+
+                <li>
+                  <strong>Data Handling:</strong> พัฒนาการดึงข้อมูลพักใน
+                  Collection เพื่อเพิ่มประสิทธิภาพในการเรียกดู
+                </li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">#SQL_Server</span>
+
+                <span class="tag">#PowerAutomate</span>
+
+                <span class="tag">#D365_API</span>
+              </div>
+            </div>
+
+            <div class="inner-project">
+              <h4>Project 3: Quality Assurance (Tester)</h4>
+
+              <ul>
+                <li>
+                  <strong>Manual Testing:</strong> ดำเนินการทดสอบระบบแบบ Full
+                  Loop Test เพื่อจำลองการใช้งานจริง
+                </li>
+
+                <li>
+                  <strong>Bug Reporting:</strong> วิเคราะห์และรายงาน Bug
+                  ให้กับพี่เลี้ยงเพื่อปรับปรุงคุณภาพระบบ
+                </li>
+
+                <li>
+                  <strong>Technical Writing:</strong> จัดทำและแก้ไข User Manual
+                  เพื่อความเข้าใจของผู้ใช้งาน
+                </li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">#Manual_Testing</span>
+
+                <span class="tag">#Technical_Writing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hackathon">
+        <h2>Hackathon & Competitions</h2>
+
+        <div class="project-card" onclick="toggleProject(this)">
+          <div class="project-header">
+            <div>
+              <div class="project-title">
+                AI for Smart Life: Insect Bite Detection
+              </div>
+
+              <div class="project-meta">
+                Hackathon • Image Classification • Streamlit
+              </div>
+            </div>
+
+            <div class="icon-expand">+</div>
+          </div>
+
+          <div class="project-content">
+            <p style="margin-bottom: 15px">
+              <strong>Innovative Application for Smart Life:</strong>
+
+              พัฒนา AI ตรวจจับรอยแผลจากแมลงกัดต่อย
+              เพื่อลดภาระค่ารักษาพยาบาลและช่วยประเมินอาการเบื้องต้นสำหรับนักท่องเที่ยวและผู้ที่อยู่ในพื้นที่เสี่ยง
+            </p>
+
+            <img
+              src="img/bitebye.jpg"
+              alt="AI Insect Bite Detection"
+              class="project-img"
+            />
+
+            <div class="inner-project">
+              <h4>My Role: AI Model & Web Development</h4>
+
+              <ul>
+                <li>
+                  <strong>Model Development:</strong> พัฒนา AI
+                  สำหรับเปรียบเทียบภาพรอยแผล โดยใช้ Dataset จาก Kaggle
+                  มาวิเคราะห์และคัดเลือก
+                </li>
+
+                <li>
+                  <strong>Model Training:</strong> ดำเนินการ Train Model บน
+                  Google Colab พร้อมปรับแต่ง Parameter
+                  ให้เหมาะสมกับลักษณะของรอยโรค
+                </li>
+
+                <li>
+                  <strong>Deployment:</strong> สร้าง Web Application ด้วย
+                  Streamlit
+                  เพื่อให้ผู้ใช้งานสามารถอัปโหลดภาพและรับผลวิเคราะห์ได้ทันที
+                </li>
+              </ul>
+            </div>
+
+            <div class="inner-project">
+              <h4>Video Demonstration</h4>
+
+              <div
+                class="video-container"
+                style="width: 100%; max-width: 600px"
+              >
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  style="width: 100%; height: auto"
+                >
+                  <source src="vid/Bitebye Demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">#AI</span>
+
+              <span class="tag">#Python</span>
+
+              <span class="tag">#GoogleColab</span>
+
+              <span class="tag">#Streamlit</span>
+
+              <span class="tag">#Kaggle</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gpbl">
+        <h2>International Experience</h2>
+
+        <div class="project-card" onclick="toggleProject(this)">
+          <div class="project-header">
+            <div>
+              <div class="project-title">
+                TNI - SIT Global Project-based Learning (gPBL)
+              </div>
+
+              <div class="project-meta">
+                Collaboration • VR Development • Unity
+              </div>
+            </div>
+
+            <div class="icon-expand">+</div>
+          </div>
+
+          <div class="project-content">
+            <p style="margin-bottom: 15px">
+              <strong>TNI - SIT gPBL :</strong>
+
+              โครงการแลกเปลี่ยนเรียนรู้เชิงปฏิบัติการระดับนานาชาติ
+              ร่วมกับนักศึกษาจาก
+
+              <strong
+                >Shibaura Institute of Technology (SIT) ประเทศญี่ปุ่น</strong
+              >
+
+              เพื่อพัฒนาโปรเจกต์เกมในรูปแบบ Virtual Reality (VR)
+            </p>
+
+            <img src="img/gpbl.jpg" alt="gPBL VR Project" class="project-img" />
+
+            <div class="inner-project">
+              <h4>Project Overview & Challenges</h4>
+
+              <ul>
+                <li>
+                  <strong>VR Development:</strong> ร่วมกันออกแบบและพัฒนาเกม VR
+                  ด้วย Unity โดยเน้นการสร้าง Interactive Experience
+                  ที่น่าตื่นเต้น
+                </li>
+
+                <li>
+                  <strong>Language & Coding Barrier:</strong>
+
+                  เผชิญกับความท้าทายด้านการสื่อสารและสไตล์การเขียนโค้ดที่แตกต่างกันระหว่างนักศึกษาไทยและญี่ปุ่น
+                </li>
+
+                <li>
+                  <strong>Communication Strategy:</strong>
+
+                  ปรับตัวโดยใช้ภาษาอังกฤษเป็นหลักในการอธิบาย Logic ของโค้ด
+                  และใช้เครื่องมือ Visual ช่วยลดความคลาดเคลื่อนในการสื่อสาร
+                </li>
+              </ul>
+              <img
+                src="img/FINALPROJECT.jpg"
+                alt="gPBL VR Project"
+                class="project-img"
+              />
+            </div>
+
+            <div class="inner-project">
+              <h4>Video Demonstration</h4>
+
+              <div
+                class="video-container"
+                style="width: 100%; max-width: 600px"
+              >
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  style="width: 100%; height: auto"
+                >
+                  <source src="vid/ghostvr.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">#Unity</span>
+
+              <span class="tag">#VR</span>
+
+              <span class="tag">#International_Collaboration</span>
+
+              <span class="tag">#Japan_Exchange</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="inclusive-design">
+        <h2>UX Research & Inclusive Design</h2>
+
+        <div class="project-card" onclick="toggleProject(this)">
+          <div class="project-header">
+            <div>
+              <div class="project-title">
+                Inclusive Design: App for Hearing Impaired
+              </div>
+
+              <div class="project-meta">
+                UX Research • Design System • Pixel Perfect
+              </div>
+            </div>
+
+            <div class="icon-expand">+</div>
+          </div>
+
+          <div class="project-content">
+            <p style="margin-bottom: 15px">
+              <strong>Final Project:</strong>
+              การออกแบบแอปพลิเคชันเพื่อส่งเสริมคุณภาพชีวิตของผู้พิการทางการได้ยิน
+              โดยเน้นกระบวนการทำ User Research
+              และการออกแบบที่ตอบโจทย์ความต้องการที่แท้จริง
+            </p>
+
+            <img
+              src="img/CCynC.jpg"
+              alt="Inclusive Design Prototype"
+              class="project-img"
+            />
+
+            <div class="inner-project">
+              <h4>My Role & Contributions</h4>
+
+              <ul>
+                <li>
+                  <strong>User Interview:</strong>
+                  ร่วมสัมภาษณ์และเก็บข้อมูลจากผู้เชี่ยวชาญ (ศิษย์เก่า)
+                  ที่ทำงานใกล้ชิดกับผู้พิการทางการได้ยิน เพื่อหา Insight
+                  ที่แท้จริง
+                </li>
+
+                <li>
+                  <strong>Design System:</strong> วางโครงสร้าง Design System
+                  ให้กับ Prototype
+                  เพื่อความสม่ำเสมอและความเป็นมืออาชีพของงานออกแบบ
+                </li>
+
+                <li>
+                  <strong>UI Refinement:</strong> ปรับปรุง Prototype ด้วยหลักการ
+                  <strong>Pixel Perfect</strong>
+                  เพื่อให้งานออกแบบมีความแม่นยำและสมบูรณ์ที่สุดก่อนนำไปทดสอบ
+                </li>
+              </ul>
+            </div>
+
+            <img
+              src="img/CCynC (1).jpg"
+              alt="Inclusive Design Prototype"
+              class="project-img"
+            />
+
+            <img
+              src="img/CCynC (2).jpg"
+              alt="Inclusive Design Prototype"
+              class="project-img"
+            />
+
+            <div
+              class="inner-project"
+              style="background: #111; padding: 20px; border-radius: 12px"
+            >
+              <h4
+                style="
+                  color: var(--accent-color);
+                  font-size: 0.9rem;
+                  text-transform: uppercase;
+                  margin-bottom: 15px;
+                "
+              >
+                Key Research Insights
+              </h4>
+
+              <div style="font-size: 0.9rem; color: #ccc">
+                <p style="margin-bottom: 10px">
+                  •
+                  <strong>Psychological Impact:</strong>
+                  ผู้พิการทางการได้ยินมักมีความเปราะบางด้านจิตใจร่วมด้วย
+                  เนื่องจากการเติบโตในสังคมแบบปิด
+                </p>
+
+                <p style="margin-bottom: 10px">
+                  •
+                  <strong>Social Barrier:</strong>
+                  มีความกังวลในการใช้ชีวิตในสังคมทั่วไป
+                  และมักจะเลือกสื่อสารภายในกลุ่มคนที่มีลักษณะเดียวกัน
+                </p>
+
+                <p>
+                  • <strong>App Usage:</strong> ใช้งานแอปทั่วไปได้ปกติ
+                  แต่จะมีปัญหาอย่างมากกับแอปกลุ่มมัลติมีเดีย (เช่น YouTube)
+                  ที่ไม่มีฟีเจอร์รองรับการเข้าถึงข้อมูลที่ชัดเจน
+                </p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">#UX_Research</span>
+
+              <span class="tag">#Inclusive_Design</span>
+
+              <span class="tag">#Design_System</span>
+
+              <span class="tag">#Pixel_Perfect</span>
+
+              <span class="tag">#Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Connect</h2>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+
+            <span class="contact-label">Phone:</span>
+
+            <a href="tel:0996156399" class="contact-value">099-615-6399</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+
+            <span class="contact-label">Email:</span>
+
+            <a href="mailto:pongpai1112@gmail.com" class="contact-value"
+              >pongpai1112@gmail.com</a
+            >
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">💬</span>
+
+            <span class="contact-label">LINE ID:</span>
+
+            <a
+              href="https://line.me/ti/p/~poipzaza"
+              target="_blank"
+              class="contact-value"
+              >poipzaza</a
+            >
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">💻</span>
+
+            <span class="contact-label">GitHub:</span>
+
+            <a
+              href="https://github.com/Pongpaii"
+              target="_blank"
+              class="contact-value"
+              >github.com/Pongpaii</a
+            >
+          </div>
+
+          <div class="contact-item address">
+            <span class="contact-icon">📍</span>
+
+            <span class="contact-label">Address:</span>
+
+            <span class="contact-text"
+              >19/3 หมู่ 1 ตำบลสำนักท้อน อำเภอบ้านฉาง จังหวัดระยอง 21130</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          &copy; 2026 Pongpai Sodsong. Built with HTML/CSS.
+        </p>
+      </footer>
+    </div>
+    <script>
+      function toggleProject(card) {
+        card.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
